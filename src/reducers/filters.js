@@ -26,12 +26,7 @@ const filters = (state = initialState, action) => {
       return {
         ...state,
         activeFilter: action.payload,
-        filteredHeroes:
-          action.payload === "all"
-            ? state.heroes
-            : state.heroes.filter((item) => item.element === action.payload),
       };
-
     default:
       return state;
   }
