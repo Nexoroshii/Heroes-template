@@ -19,12 +19,4 @@ const store = configureStore({
   devTools: process.env.NODE_ENV !== "production",
 });
 
-// const store = createStore(
-//   combineReducers({ heroes, filters }),
-//   compose(
-//     applyMiddleware(ReduxThunk, stringMiddleware),
-//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-//   )
-// );
-
 export default store;
